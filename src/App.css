@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+}
+body{
+  overflow-x:hidden;
+}
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+  background: rgb(255, 255, 255);
+  margin-top:0;
+  position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.scroll-up header {
+  background:#0a3140af;
+  filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+  position:fixed;
+  padding:20px 0;
+  margin-top:0;
+  transform: translate3d(0, 0, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.scroll-up header img{
+  width:100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* @media(min-width:992px){
+  .scroll-up header {
+    padding-top:0;
+}
+  .scroll-up header .menu ul li a{
+    color:#000;
+}
+  .scroll-up header .menu ul li a:hover{
+    color:#01996D;
+}
+  .scroll-up header .menu ul li:last-child a{
+    background-color:#000;
+    color:#fff;
+}
+  .scroll-up header .menu ul li:last-child a:hover{
+    color:#01996D;
+}
+} */
+
+.menu-is-open {
+  overflow: hidden;
+
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-is-open header {
+  filter: none;
 }

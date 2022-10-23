@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App, { client } from './App';
+import GlobalStyle from "./theme/GlobalStyle";
+import { ThemeProvider } from "styled-components";
+import theme from "./theme/theme";
 import reportWebVitals from './reportWebVitals';
+import { ApolloProvider } from '@apollo/client';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={client}>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+       <App />
+    </ThemeProvider>
+    </ApolloProvider>
   </React.StrictMode>
 );
 
