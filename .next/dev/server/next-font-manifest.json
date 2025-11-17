@@ -1,0 +1,19 @@
+{
+  "app": {
+    "[project]/app/_not-found/page": [
+      "static/media/d7d9c82e455b419c-s.p.b0b7fb4c.woff2"
+    ],
+    "[project]/app/contact/page": [
+      "static/media/d7d9c82e455b419c-s.p.b0b7fb4c.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/d7d9c82e455b419c-s.p.b0b7fb4c.woff2"
+    ],
+    "[project]/app/team/page": [
+      "static/media/d7d9c82e455b419c-s.p.b0b7fb4c.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

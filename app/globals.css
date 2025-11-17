@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-baloo: var(--font-baloo);
+  --font-baloo-regular: var(--font-baloo);
+  --font-baloo-medium: var(--font-baloo);
+  --font-baloo-semibold: var(--font-baloo);
+  --font-baloo-bold: var(--font-baloo);
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Scroll behavior */
+  body.scroll-down header {
+    transform: translate3d(0, -100%, 0);
+    background: rgb(255, 255, 255);
+    margin-top: 0;
+    position: fixed;
+  }
+
+  body.scroll-up header {
+    background: #0a3140af;
+    filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+    position: fixed;
+    padding: 20px 0;
+    margin-top: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  body.scroll-up header img {
+    width: 100px;
+  }
+
+  body.menu-is-open {
+    overflow: hidden;
+  }
+
+  body.menu-is-open header {
+    filter: none;
+  }
+}
+
+/* Custom font weight classes */
+.font-baloo {
+  font-family: var(--font-baloo);
+  font-weight: 400;
+}
+
+.font-baloo-medium {
+  font-family: var(--font-baloo);
+  font-weight: 500;
+}
+
+.font-baloo-semibold {
+  font-family: var(--font-baloo);
+  font-weight: 600;
+}
+
+.font-baloo-bold {
+  font-family: var(--font-baloo);
+  font-weight: 700;
+}
